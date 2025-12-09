@@ -1,0 +1,4 @@
+Create Database pengusulan_rakyat
+use database pengusulan_rakyat
+
+lalu import file sql ke database
