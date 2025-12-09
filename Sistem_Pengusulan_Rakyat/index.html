@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Website Pengusulan Rakyat</title>
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+
+<div class="container">
+    <h2>Formulir Usulan Baru</h2>
+    <form id="form-tambah">
+        <label for="nama_pengusul">Nama:</label><br>
+        <input type="text" id="nama_pengusul" required><br><br>
+        
+        <label for="topik_usulan">Topik:</label><br>
+        <input type="text" id="topik_usulan" required><br><br>
+        
+        <label for="deskripsi_usulan">Deskripsi:</label><br>
+        <textarea id="deskripsi_usulan" required></textarea><br><br>
+        
+        <button type="submit">Kirim Usulan</button>
+    </form>
+    
+    <hr>
+    
+    <h2>Daftar Usulan</h2>
+    <input type="text" id="input-search" placeholder="Cari berdasarkan nama/topik">
+    <button onclick="fetchUsulan()">Cari</button>
+    
+    <table id="tabel-usulan">
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Topik</th>
+                <th>Tanggal</th>
+                <th>Status</th>
+                <th>Aksi</th>
+            </tr>
+        </thead>
+        <tbody>
+            </tbody>
+    </table>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
